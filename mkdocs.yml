@@ -1,0 +1,74 @@
+site_name: Lott3ry Docs
+site_url: https://lott3ry.github.io/lott3ry
+repo_url: https://github.com/lott3ry/lott3ry
+repo_name: lott3ry/lott3ry
+
+theme:
+  name: material
+  language: en
+  favicon: assets/images/favicon.png
+  logo: assets/images/logo.png
+  icon:
+    repo: simple/github
+  palette:
+    primary: teal
+    accent: deep orange
+  features:
+    - content.code.copy
+    - navigation.expand
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.prefetch
+    - navigation.instant.progress
+    - navigation.path
+    - navigation.top
+    - navigation.tracking
+    - navigation.sections
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+
+extra:
+  social:
+    - icon: simple/github
+      link: https://github.com/lott3ry/lott3ry
+      name: "Docs on GitHub"
+  generator: false
+
+markdown_extensions:
+  - codehilite
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.critic
+  - pymdownx.keys
+  - pymdownx.details
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - abbr
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - footnotes
+
+plugins:
+  - search:
+      lang: en
+  - include_dir_to_nav
+  - glightbox
+  - minify:
+      minify_html: true
+
+nav:
+  - Home: index.md
+  - Getting Started:
+    - Tutorial Basics: tutorial-basics.md
+    - Tutorial Extras: tutorial-extras.md
+    - Concept: concept.md
+  - Development:
+    - Developer Guide: developer-guide.md
